@@ -25,6 +25,7 @@ app.get("/todos/",async(request,response)=>{
     const todosArray=await db.all(getTodos);  //all method is used to get multiple rows of data
     response.send(todosArray);
 });
+
 app.listen(3000);
 
 module.exports=app;
